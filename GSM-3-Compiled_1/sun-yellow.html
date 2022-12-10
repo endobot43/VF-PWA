@@ -3,7 +3,7 @@
 <head>
     <title>GSM Schedule</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -13,164 +13,148 @@
 </head>
 
 <body>
-	<img id="bg-svg-after" src="assets/img/vf-gradient-2.svg" class="100vh" />
-	<div class="pt-5 mt-3 parent groups-wrapper">
-		<img src="assets/img/yellow_group.png" class="group-icon pr-4">
-		<a href="index.html">
-			<img src="assets/img/settings.png" class="settings">
-		</a>
-	</div>
-	<img class="gsm-logo-after" src="assets/img/gsm_23.png" />
-
-	<div id="overlay" onclick="off()">
-  		<div id="close" class="parent">
-			<!--map array begin-->
-			<!--1-->
-			<div id="picture1" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">Registration<p>
-				<p class="map-title-sub pl-5 ml-5"> Beach Level</p>
-				<img  src="assets/img/beach-pavillion.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
+<div class="container-fluid">
+	<img class="gradient-lines-after child" src="assets/img/vf-gradient-2.svg"/>
+		<section class="container col-12 parent mt-5 pt-5 groups-wrapper">
+			<div class="d-flex justify-content-center pb-3">
+				<img class="gsm-logo-after" src="assets/img/gsm_23.png" />
 			</div>
-  			<!--2-->
-			  <div id="picture2" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">Lunch<p>
-				<p class="map-title-sub pl-5 ml-5"> Beach Level</p>
-				<img  src="assets/img/beach-pavillion.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
+			<div class="d-flex justify-content-center">
+				<img src="assets/img/yellow_group.png" class="group-icon" />
+				<a href="index.html">
+				<img src="assets/img/settings.png" class="settings" />
+				</a>
 			</div>
-			<!--3-->
-			<div id="picture3" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">Registration<p>
-				<p class="map-title-sub pl-5 ml-5">Lobby Area</p>
-				<img  src="assets/img/grand-ballroom.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
+			<div class="schedule-day pt-5">
+				<div class="day-text mr-3">Sunday, Dec 11</div>
+				<a href="mon-yellow.html"><img class="icon-next mt-2" src="assets/img/arrow-next.png"></a>
 			</div>
-			<!--4-->
-			<div id="picture4" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">Welcome Reception<p>
-				<p class="map-title-sub pl-5 ml-5">Floor 5</p>
-				<img  src="assets/img/south-terrace.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
-			</div>
-			<!--5-->
-			<div id="picture5" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">Dinner<p>
-				<p class="map-title-sub pl-5 ml-5">Floor 5</p>
-				<img  src="assets/img/king-charles.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
-			</div>
-			<!--6-->
-			<div id="picture6" class="parent hide">
-				<p class="map-title mt-5 pt-2 pl-5 ml-5">FY'23 Kick Off<p>
-				<p class="map-title-sub pl-5 ml-5">Lobby Area</p>
-				<img  src="assets/img/grand-ballroom.gif">
-				<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
-			</div>
-			<!--maparray end-->
-  		</div>
-	</div>
-	<div class="pt-5 mt-5 parent day-wrapper">
-		<div class="row schedule-day">
-			<div class="day-text mr-3 ml-3">Sunday, Dec 11</div>
-			<a href="mon-yellow.html"><img src="assets/img/arrow-next.png"></a>
+			<div class="vertical-scroll-wrapper pt-5 mt-5">
+			<hr>
+				<div class="ml-2 row vertical-scroll col-12 parent">
+					<!--card1-->
+					<div class="card">
+						<div class="card-body">
+							<img src="assets/img/registration.svg" alt="..." class="pl-3 image">
+							<button type="button" class="ml-2 row btn btn-link" onclick="on(); showImg(1);">Details</button>
+						</div>
+						<div class="row col-12 parent">
+							<p class="card-title mt-1 ml-4 mr-5">Registration Open</p>
+							<p class="card-text mt-1 ml-4 mr-5">Beach Pavillion | Beach Level</p>
+							<p class="time">12pm-4pm</p>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card1-->
+					<div class="card mt-5">
+						<div class="card-body">
+							<img src="assets/img/registration.svg" alt="..." class="pl-3 image">
+							<button type="button" class="ml-2 row btn btn-link" onclick="on(); showImg(1);">Details</button>
+						</div>
+						<div class="row col-12 parent">
+							<p class="card-title mt-1 ml-4 mr-5">Registration Open</p>
+							<p class="card-text mt-1 ml-4 mr-5">Beach Pavillion | Beach Level</p>
+							<p class="time">12pm-4pm</p>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card1-->
+					<div class="card mt-5">
+						<div class="card-body">
+							<img src="assets/img/registration.svg" alt="..." class="pl-3 image">
+							<button type="button" class="ml-2 row btn btn-link" onclick="on(); showImg(1);">Details</button>
+						</div>
+						<div class="row col-12 parent">
+							<p class="card-title mt-1 ml-4 mr-5">Registration Open</p>
+							<p class="card-text mt-1 ml-4 mr-5">Beach Pavillion | Beach Level</p>
+							<p class="time">12pm-4pm</p>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card1-->
+					<div class="card mt-5">
+						<div class="card-body">
+							<img src="assets/img/registration.svg" alt="..." class="pl-3 image">
+							<button type="button" class="ml-2 row btn btn-link" onclick="on(); showImg(1);">Details</button>
+						</div>
+						<div class="row col-12 parent">
+							<p class="card-title mt-1 ml-4 mr-5">Registration Open</p>
+							<p class="card-text mt-1 ml-4 mr-5">Beach Pavillion | Beach Level</p>
+							<p class="time">12pm-4pm</p>
+						</div>
+					</div>
+					<!--card end-->
+					<!--card1-->
+					<div class="card mt-5">
+						<div class="card-body">
+							<img src="assets/img/registration.svg" alt="..." class="pl-3 image">
+							<button type="button" class="ml-2 row btn btn-link" onclick="on(); showImg(1);">Details</button>
+						</div>
+						<div class="row col-12 parent">
+							<p class="card-title mt-1 ml-4 mr-5">Registration Open</p>
+							<p class="card-text mt-1 ml-4 mr-5">Beach Pavillion | Beach Level</p>
+							<p class="time">12pm-4pm</p>
+						</div>
+					</div>
+					<!--card end-->
+				</div>
+				<hr />
 		</div>
-	</div>	
-	<div class="pt-5 mt-5 vertical-scroll-wrapper child">
-		<hr class="parent" />
-			<div class="vertical-scroll">
-				<div class="card">
-					<div class="row">
-						<div class="col-md-2 text-center img-box">
-							<img src="assets/img/registration.svg" alt="..." class="image">
-						</div>
-						<div class="col-md-7 main-box fit-content">
-							<div class="card-body">
-								<p class="card-title">Registration Open</p>
-								<p class="card-text">Beach Pavillion | <span class="floor">Beach Level</span></p>
-								<button type="button" class="btn btn-link" onclick="on(); showImg(1);">Details</button>
-							</div>  
-						</div>
-						<div class="col-md-3 time">12pm-4pm</div>
-					</div>
+		</section>
+		<section class="parent">
+			<!--map array container-->
+			<div id="overlay" onclick="off()">
+  				<div id="close" class="parent">
+				<!--map array begin-->
+				<!--1-->
+				<div id="picture1" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">Registration<p>
+					<p class="map-title-sub pl-5 ml-5"> Beach Level</p>
+					<img  src="assets/img/beach-pavillion.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
-				<div class="card mb- mt-5">
-					<div class="row">
-						<div class="col-md-2 text-center img-box">
-					<img src="assets/img/lunch.svg" alt="..." class="image">
+  				<!--2-->
+				  <div id="picture2" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">Lunch<p>
+					<p class="map-title-sub pl-5 ml-5"> Beach Level</p>
+					<img  src="assets/img/beach-pavillion.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
-				<div class="col-md-7 main-box fit-content">
-					<div class="card-body">
-						<p class="card-title">Lunch</p>
-						<p class="card-text">Beach Pavillion | <span class="floor">Beach Level</span></p>
-						<button type="button" class="btn btn-link" onclick="on(); showImg(2);">Details</button>
-					</div>
+				<!--3-->
+				<div id="picture3" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">Registration<p>
+					<p class="map-title-sub pl-5 ml-5">Lobby Area</p>
+					<img  src="assets/img/grand-ballroom.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
-				<div class="col-md-3 time">12pm-2pm</div>
+				<!--4-->
+				<div id="picture4" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">Welcome Reception<p>
+					<p class="map-title-sub pl-5 ml-5">Floor 5</p>
+					<img  src="assets/img/south-terrace.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
+				<!--5-->
+				<div id="picture5" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">Dinner<p>
+					<p class="map-title-sub pl-5 ml-5">Floor 5</p>
+					<img  src="assets/img/king-charles.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
-				<div class="card mt-5">
-				<div class="row">
-				<div class="col-md-2 text-center img-box">
-					<img src="assets/img/registration.svg" alt="..." class="image">
+				<!--6-->
+				<div id="picture6" class="parent hide">
+					<p class="map-title mt-5 pt-2 pl-5 ml-5">FY'23 Kick Off<p>
+					<p class="map-title-sub pl-5 ml-5">Lobby Area</p>
+					<img  src="assets/img/grand-ballroom.gif">
+					<p class="pl-5 ml-5 pb-5 mb-5 child map-title-close">close</p>
 				</div>
-				<div class="col-md-7 main-box fit-content">
-					<div class="card-body">
-						<p class="card-title">Registration Open</p>
-						<p class="card-text">Grand Ballroom Arcade | <span class="floor">Lobby</span></p>
-						<button type="button" class="btn btn-link" onclick="on(); showImg(3);">Details</button>
-					</div>  
-				</div>
-				<div class="col-md-3 time">4pm-6pm</div>
-				</div>
-				</div>
-				<div class="card mt-5">
-				<div class="row">
-				<div class="col-md-2 text-center img-box">
-					<img src="assets/img/event.svg" alt="..." class="image">
-				</div>
-				<div class="col-md-7 main-box fit-content">
-					<div class="card-body">
-					<p class="card-title">Welcome Reception</p>
-					<p class="card-text">South Terrace | <span class="floor">Floor 5</span></p>
-					<button type="button" class="btn btn-link" onclick="on(); showImg(4);">Details</button>
-					</div>  
-				</div>
-				<div class="col-md-3 time">6:30pm-7:15pm</div>
-				</div>
-				</div>
-				<div class="card mt-5">
-				<div class="row">
-				<div class="col-md-2 text-center img-box">
-					<img src="assets/img/dinner.svg" alt="..." class="image">
-				</div>
-				<div class="col-md-7 main-box fit-content">
-					<div class="card-body">
-					<p class="card-title">Dinner</p>
-					<p class="card-text">King Charles | <span class="floor">Floor 5</span></p>
-					<button type="button" class="btn btn-link" onclick="on(); showImg(5);">Details</button>
-					</div>  
-				</div>
-				<div class="col-md-3 time">7:15pm-8:15pm</div>
-				</div>
-				</div>
-				<div class="card mb- mt-5">
-				<div class="row">
-				<div class="col-md-2 text-center img-box">
-					<img src="assets/img/session.svg" alt="..." class="image">
-				</div>
-				<div class="col-md-7 main-box fit-content">
-					<div class="card-body">
-					<p class="card-title">FY'23 Kick Off</p>
-					<p class="card-text">Grand Ballrom | <span class="floor">Lobby</span></p>
-					<button type="button" class="btn btn-link" onclick="on(); showImg(6);">Details</button>
-					</div>  
-				</div>
-				<div class="col-md-3 time">8:30pm-10:30pm</div>
-				</div>
-				</div>
+				<!--maparray end-->
+  				</div>
 			</div>
-		<hr />
+		</section>
+		
+		
+		
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
