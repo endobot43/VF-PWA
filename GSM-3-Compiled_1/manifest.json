@@ -1,0 +1,54 @@
+{
+  "name": "Verifone Demo",
+  "short_name": "Verifone Demo",
+  "theme_color": "#000000",
+  "description": "A Verifone Demo",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "index.html",
+  "icons": [{
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828938537x517978983802662460/60x60-4.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828945944x735335497171594900/60x60-6.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828930347x134531922019577540/60x60-2.png",
+      "type": "image/png",
+      "sizes": "120x120",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828919057x673993095900555500/60x60.png",
+      "type": "image/png",
+      "sizes": "60x60",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828925172x208869737845067700/60x60-1.png",
+      "type": "image/png",
+      "sizes": "70x70",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828935238x608486722157498400/60x60-3.png",
+      "type": "image/png",
+      "sizes": "150x150",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://s3.amazonaws.com/appforest_uf/f1615828942732x500421144150964300/60x60-5.png",
+      "type": "image/png",
+      "sizes": "310x310",
+      "purpose": "any maskable"
+    }
+  ]
+}
