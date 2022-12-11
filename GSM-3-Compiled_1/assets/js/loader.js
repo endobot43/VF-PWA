@@ -29,7 +29,7 @@ function checkInputs() {
 }
 function gotoPage() {
   var days = ['sun','mon','tue','wed','thu','fri','sat']
-  // var today = days[new Date().getDay()]
+  var today = days[new Date().getDay()]
   var today = 'sun';
   var color = Cookies.get('color');
   var page = `${today}-${color}.html`
