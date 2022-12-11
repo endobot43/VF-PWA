@@ -152,7 +152,8 @@ p {
 }
 
 .icon-next {
-	width: 3vw;
+	padding-top: .1rem;
+	width: 2.5vh;
 }
 
 .schedule-day {
@@ -176,21 +177,25 @@ p {
 
 .map-title {
 	color:#45D3BD;
-	font-size: 60px;
+	font-size: 10vw;
 	left: 100px;
 	top: 100px;
 }
 
 .map-title-sub {
 	color:#eef5f4;
-	font-size: 37px;
+	font-size: 6vw;
 	left: 100px;
+}
+
+.map-size {
+	width: 150vw;
+	overflow: hidden;
 }
 
 .map-title-close {
 	color: #45D3BD;;
-	font-size: 27px;
-	left: 10px;
+	font-size: 6vw;
 }
 
 .br-text{
@@ -214,7 +219,6 @@ p {
 
 .gradient-lines-after{
 	width: 100vw;
-	transform: translate(-1%, -30%);
 	background-image: url('assets/img/vf-gradient.svg');
 	overflow: hidden;
 }
@@ -252,7 +256,8 @@ p {
 .time {
     font-size: 3.5vw;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+    width: 30vw;
 
 }
 
@@ -268,15 +273,18 @@ p {
 
 .card-title {
     font-size: 3vw;
-    font-family: "Poppins", sans-serif;;
-    font-weight: 700;
-    width: 20vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 25vw;
+
 }
 
 .card-text {
     font-size: 3vw;
-    font-weight: 300;
-    width: 20rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    width: 34vw;
+
 }
 
 .col-md-3 {
@@ -284,7 +292,9 @@ p {
 }
 
 .card-body {
-    padding: .75rem !important;
+    padding-left: 1rem !important;
+    padding-top: .5rem !important;
+    padding-bottom: .125rem !important;
 }
 
 .btn.btn-outline-primary {
@@ -350,15 +360,13 @@ p {
 }
 
 .vertical-scroll-wrapper {
-	width: 100vw;
-	margin-left: -1.5vw;
+	margin-left: 0vw;
 	
 }
 
 .vertical-scroll {
 	display: inline-flex;
 	overflow-y: scroll;
-	width: 100vw;
 	overflow-x: hidden;
 	height: 60vh;
 }
@@ -403,7 +411,7 @@ p {
 }
 
 .group-icon {
-	width: 22vw;
+	width: 24vw;
 }
 
 .groups-wrapper {
@@ -510,20 +518,21 @@ p {
 #overlay {
   position: fixed;
   display: none; 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: auto;
   top: 0;
   left: 0px;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.92);
+  background-color: rgba(0,0,0,0.94);
   z-index: 2;
   cursor: pointer;
+
 }
 
 .map-scale {
 	position: relative;
-	scale: 134%;
+	scale: 100%;
 	left: 200px;
 	overflow: hidden ;
 }
@@ -536,7 +545,8 @@ p {
 }
 
 .settings {
-	width:5vw;
+	width:7vw;
+	padding-top: .25rem;
 }
 
 .show {

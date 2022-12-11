@@ -14,11 +14,6 @@ function setColor(color) {
   checkInputs()
 }
 
-function setSessionReminder(answer) {
-  Cookies.set('session-reminder', answer);
-  checkInputs()
-}
-
 function removeColor(){
   Cookies.remove('color')
   Cookies.remove('session-reminder')
@@ -27,9 +22,8 @@ function removeColor(){
 
 function checkInputs() {
   var color = Cookies.get('color');
-  var session = Cookies.get('session-reminder');
   var element = document.getElementById('continueButton');
-  if(session !== undefined && color !== undefined) {
+  if(color !== undefined) {
     element.classList.remove('disabled')
   }
 }
@@ -38,10 +32,9 @@ function gotoPage() {
   // var today = days[new Date().getDay()]
   var today = 'sun';
   var color = Cookies.get('color');
-  var session = Cookies.get('session-reminder');
   var page = `${today}-${color}.html`
   console.log('color: ', color)
-  if(color !== undefined && session !== undefined && today !== 'fri'&& today !== 'sat'){
+  if(color !== undefined && today !== 'fri'&& today !== 'sat'){
     location.href=page
   }
 }
